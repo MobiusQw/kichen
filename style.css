@@ -15,7 +15,6 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -113,21 +112,22 @@ nav a.active {
   position: relative;
   background: url('women.png') no-repeat center center fixed;
   background-size: cover;
-  padding: 100px 20px;
+  padding: 265px 20px 120px;
   text-align: center;
   color: white;
 }
 
 .features h3 {
-  font-size: 48px;
+  font-size: 70px;
   font-weight: 800;
   font-family: 'Georgia', serif;
-  margin: 40px;
+  margin: 10px;
 }
 
 .features h2{
-  font-size: 20px;
+  font-size: 22px;
   margin: 30px;
+  font-weight: 400;
 }
 
 .features p {
@@ -173,3 +173,25 @@ nav a.active {
   background-color: #ac8100;
   color: white;
 }
+
+
+
+
+.big-text{
+  padding: 59px;
+  font-size: 43px;
+  font-weight: 600;
+  text-align: center;
+  color: #111;
+}
+
+.big-text::after {
+  content: "";
+  display: block;
+  width: 100px;               /* длина полоски */
+  height: 5px;               /* толщина полоски */
+  background-color: #ffc107; /* цвет полоски */
+  margin: 20px auto ;       /* отступ сверху и по центру */
+  border-radius: 2px;        /* скругление углов */
+}
+
