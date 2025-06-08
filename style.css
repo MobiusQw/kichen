@@ -190,8 +190,7 @@ nav a.active {
   display: block;
   width: 100px;               /* длина полоски */
   height: 5px;               /* толщина полоски */
-  background-color: #ffc107; /* цвет полоски */
-  margin: 20px auto ;       /* отступ сверху и по центру */
-  border-radius: 2px;        /* скругление углов */
+  background-color: #ffc107;
+  margin: 20px auto ;
+  border-radius: 2px;       
 }
-
