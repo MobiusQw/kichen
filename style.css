@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background: white;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: lowercase;
+  color: #222;
+}
+
+.logo span {
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  color: #888;
+  letter-spacing: 2px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+  font-size: 22px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a.active {
+  color: #ffc107;
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.phone-btn {
+  background: #ffc107;
+  color: #222;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 500ms ease;
+}
+
+.lang-switcher {
+  position: relative;
+}
+
+.lang-switcher span {
+  margin-right: 5px;
+}
+
+.lang-switcher select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+.features {
+  position: relative;
+  background: url('women.png') no-repeat center center fixed;
+  background-size: cover;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
+.features h3 {
+  font-size: 48px;
+  font-weight: 800;
+  font-family: 'Georgia', serif;
+  margin: 40px;
+}
+
+.features h2{
+  font-size: 20px;
+  margin: 30px;
+}
+
+.features p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.block img{
+  position: relative;
+  bottom: 10px ;
+}
+
+.block {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+  padding-left: 800px;
+}
+
+.btn {
+  background-color: #ffc107;
+  color: #222;
+  padding: 25px 20px;
+  border-radius: 35px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
+  transition: all 500ms ease;
+}
+
+.btn:hover,
+.phone-btn:hover {
+  transform: scale(1.1);
+  background-color: #ac8100;
+  color: white;
+}
