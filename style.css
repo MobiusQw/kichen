@@ -176,7 +176,6 @@ nav a.active {
 
 
 
-
 .big-text{
   padding: 59px;
   font-size: 43px;
@@ -207,6 +206,7 @@ nav a.active {
   gap: 50px;
   justify-content: center;
   width: 100%;
+  padding-bottom: 69px;
 }
 
 .descr {
@@ -234,10 +234,53 @@ nav a.active {
   z-index: 2;
 }
 
-.card-text .highlight {
+.card-text .highlight,
+.overlay .highlight{
   color: #FFD700;
 }
 
 .card-text p {
   line-height: 1.4;
+}
+
+
+
+
+.kitchen-section {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.kitchen-card{
+  display: block;
+  text-decoration: none;
+  position: relative;
+  border-radius: 12px;
+  color: black;
+  transition: transform 0.3s ease;
+}
+
+.kitchen-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0px 0px 20px 30px;
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный чёрный */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.kitchen-card img {
+  width: 600px;
+  height: 500px;
 }
